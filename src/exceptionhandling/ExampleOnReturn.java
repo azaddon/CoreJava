@@ -4,7 +4,9 @@ public class ExampleOnReturn {
 
 	public int doMethod() {
 		try {
-			int sum =10/0;
+			throw new ArithmeticException();
+			//below code will not be reachable
+			//int sum =10/0;
 		}
 		catch(ArithmeticException ae) {
 			System.out.println("exception caught");
