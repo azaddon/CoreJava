@@ -13,23 +13,6 @@ public class triangle {
 		System.out.println(fact);
 	}
 
-	public void fibonacci() {
-		int a = 0, b = 1, c, i;
-		Scanner s = new Scanner(System.in);
-		int N = s.nextInt();
-		if (N <= 1) {
-			return;
-		}
-		for (i = 2; i <= N; i++) {
-
-			c = a + b;
-			a = b;
-			b = c;
-
-		}
-		System.out.println(b);
-	}
-
 	public void palindrome() {
 		String original, reverse = "";
 		Scanner s1 = new Scanner(System.in);
@@ -49,7 +32,7 @@ public class triangle {
 	public static void main(String[] args) {
 		triangle t1 = new triangle();
 		t1.factorial();
-		t1.fibonacci();
+
 		t1.palindrome();
 	}
 }
