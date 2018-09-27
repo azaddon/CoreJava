@@ -26,7 +26,7 @@ public class GFG
          System.out.println("value for key \"vishal\" is:- " + a);
      }
       
-     map.clear();
+    // map.clear();
      print(map);
  }
   
